@@ -12,8 +12,7 @@ uploaded_file = st.file_uploader("Upload your input file", type=["xlsx"])
 
 # Load data
 try:
-    #df = pd.read_excel(uploaded_file)
-    df = pd.read_excel("data.xlsx")
+    df = pd.read_excel(uploaded_file)
 
 # Sidebar
     st.sidebar.header("Filter Here:")
