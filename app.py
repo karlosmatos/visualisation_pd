@@ -8,11 +8,11 @@ st.set_page_config(page_title="Sales Visualisation",
                     layout="wide")
 
 # Upload xlsx file button
-uploaded_file = st.file_uploader("Upload your input file", type=["xlsx"])
+#uploaded_file = st.file_uploader("Upload your input file", type=["xlsx"])
 
 # Load data
 try:
-    df = pd.read_excel(uploaded_file)
+    df = pd.read_excel("data.xlsx")
 
 # Sidebar
     st.sidebar.header("Filter Here:")
